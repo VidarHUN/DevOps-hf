@@ -11,7 +11,7 @@ const api = new OpenAPIBackend({
 var cnt = 0;
 
 api.registerHandler('getCounter', (ctx, req, res) => {
-    cnt = cnt + 1;
+    cnt = cnt + 2;
     return res.status(200).json({ "counter": cnt });
 })
 

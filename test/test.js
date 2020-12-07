@@ -26,7 +26,7 @@ describe('Test', () => {
             .get('/counter')
             .end((err, res) => {
                 res.should.have.status(200);
-                assert.propertyVal(res.body, 'counter', 2);
+                assert.propertyVal(res.body, 'counter', 3);
                 done();
             });
     });
